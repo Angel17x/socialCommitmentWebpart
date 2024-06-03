@@ -5,15 +5,16 @@ import {
   type IPropertyPaneConfiguration,
   PropertyPaneTextField
 } from '@microsoft/sp-property-pane';
-import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
-import { IReadonlyTheme } from '@microsoft/sp-component-base';
-
+import { BaseClientSideWebPart, WebPartContext } from '@microsoft/sp-webpart-base';
+// import { IReadonlyTheme } from '@microsoft/sp-component-base';
 import * as strings from 'SocialCommitmentWebPartStrings';
 import SocialCommitment from './components/SocialCommitment';
 import { ISocialCommitmentProps } from './components/ISocialCommitmentProps';
-
+import { HttpClient } from '@microsoft/sp-http';
 export interface ISocialCommitmentWebPartProps {
   description: string;
+  context: WebPartContext;
+  httpClient: HttpClient;
 }
 
 export default class SocialCommitmentWebPart extends BaseClientSideWebPart<ISocialCommitmentWebPartProps> {
@@ -23,6 +24,8 @@ export default class SocialCommitmentWebPart extends BaseClientSideWebPart<ISoci
     const element: React.ReactElement<ISocialCommitmentProps> = React.createElement(
       SocialCommitment,
       {
+        context: this.context,
+        httpClient: this.properties.httpClient
         // description: this.properties.description,
         // isDarkTheme: this._isDarkTheme,
         // environmentMessage: this._environmentMessage,

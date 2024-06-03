@@ -32,6 +32,16 @@
         "id": "00998d84-362e-4683-aa6f-1380eaed1181",
         "version": "1.0.0.0"
       }
+    ],
+    "webApiPermissionRequests": [
+      {
+        "resource": "Microsoft Graph",
+        "scope": "User.Read"
+      },
+      {
+        "resource": "SharePoint",
+        "scope": "Web.Read"
+      }
     ]
   },
   "paths": {
