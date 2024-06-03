@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "social-commitment-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/socialCommitment/SocialCommitmentWebPart.js",
+          "manifest": "./src/webparts/socialCommitment/SocialCommitmentWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "SocialCommitmentWebPartStrings": "lib/webparts/socialCommitment/loc/{locale}.js"
+  }
+}

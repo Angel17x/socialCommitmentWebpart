@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "social-commitment-webpart-client-side-solution",
+    "id": "99f93e01-d21c-4ac5-8997-6b4e13aff8e1",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.19.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "social-commitment-webpart description"
+      },
+      "longDescription": {
+        "default": "social-commitment-webpart description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "social-commitment-webpart Feature",
+        "description": "The feature that activates elements of the social-commitment-webpart solution.",
+        "id": "00998d84-362e-4683-aa6f-1380eaed1181",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/social-commitment-webpart.sppkg"
+  }
+}

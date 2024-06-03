@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "20.14.0",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.12.0"
+    },
+    "version": "1.19.0",
+    "libraryName": "social-commitment-webpart",
+    "libraryId": "99f93e01-d21c-4ac5-8997-6b4e13aff8e1",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "social-commitment-webpart",
+    "solutionShortDescription": "social-commitment-webpart description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
